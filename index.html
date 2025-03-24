@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Greicinha Santos - Personal Trainer</title>
+    <link href="./output.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-900 text-white">
+    <header class="flex justify-between items-center p-6 max-w-6xl mx-auto mb-8">
+      <div class="flex items-end gap-6">
+        <img src="img/logo-branca-greicinha-santos.webp" alt="Logo Greicinha Santos" class="h-25 w-50">
+      </div>
+
+      <button id="menu-button" class="md:hidden focus:outline-none">
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </button>
+      <nav class="hidden md:flex md:gap-14 gap-36 text-sm">
+        <div class="flex">
+          <ul class="md:flex gap-6">
+            <li><a href="#" class="hover:text-[#01e3eb]">Início</a></li>
+            <li><a href="#objetivos" class="hover:text-[#01e3eb]">Objetivos</a></li>
+            <li><a href="#sobre-mim" class="hover:text-[#01e3eb]">Sobre mim</a></li>
+            <li><a href="#planos" class="hover:text-[#01e3eb]">Planos</a></li>
+            <li><a href="#como-funciona" class="hover:text-[#01e3eb]">Como Funciona</a></li>
+          </ul>
+        </div>
+        <div class="flex gap-4">
+          <a href="https://www.instagram.com/greicinha_santos/" target="_blank"><i class="fa-brands fa-instagram hover:text-[#01e3eb]"></i></a>
+          <a href="https://wa.me/5532999566031?text=Oi,+Greicinha!+Vim+pelo+site+e+quero+ser+sua+aluna!" target="_blank"><i class="fa-brands fa-whatsapp hover:text-[#01e3eb]"></i></a>
+        </div>
+      </nav>
+
+      <!-- Menu Mobile Overlay -->
+      <div id="mobile-menu" class="fixed top-0 right-0 w-64 h-full bg-gray-900 text-white shadow-lg transform translate-x-full transition-transform duration-300 z-40">
+        <div class="flex justify-between items-center p-4 border-b border-gray-700">
+          <img src="img/logo-branca-greicinha-santos.webp" alt="Logo Greicinha Santos" class="h-10">
+          <button id="close-button">
+            <i class="fa-solid fa-xmark fa-xl"></i>
+          </button>
+        </div>
+        <nav class="flex flex-col gap-4 p-6 text-lg">
+          <ul class="md:flex">
+            <li><a href="#" class="hover:text-[#01e3eb]">Início</a></li>
+            <li><a href="#objetivos" class="hover:text-[#01e3eb]">Objetivos</a></li>
+            <li><a href="#sobre-mim" class="hover:text-[#01e3eb]">Sobre mim</a></li>
+            <li><a href="#planos" class="hover:text-[#01e3eb]">Planos</a></li>
+            <li><a href="#como-funciona" class="hover:text-[#01e3eb]">Como Funciona</a></li>
+          </ul>
+          <div class="border-t border-[#01e3eb] my-8"></div>
+          <div class="flex items-center gap-4">
+            <a href="https://www.instagram.com/greicinha_santos/" target="_blank"><i class="fa-brands fa-instagram hover:text-[#01e3eb]"></i></a>
+            <a href="https://wa.me/5532999566031?text=Oi,+Greicinha!+Vim+pelo+site+e+quero+ser+sua+aluna!" target="_blank"><i class="fa-brands fa-whatsapp hover:text-[#01e3eb]"></i></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10 px-6 py-12" id="home">
+      <section class="text-center max-w-lg w-full md:w-1/2 md:text-left">
+        <h2 class="text-6xl font-bold max-sm:text-5xl max-sm:mb-10">Seja minha aluna de qualquer lugar do Brasil!</h2>
+        <ul class="mt-6 space-y-3 text-lg">
+          <li class="flex items-center gap-2"><span>✔</span> Treine em casa ou na sua academia</li>
+          <li class="flex items-center gap-2"><span>✔</span> Vídeos dos exercícios direto no aplicativo</li>
+          <li class="flex items-center gap-2"><span>✔</span> Atendimento através do WhatsApp</li>
+        </ul>
+        <div>
+          <a href="https://wa.me/5532999566031?text=Oi,+Greicinha!+Quero+ser+sua+aluna+agora!" target="_blank"
+          class="mt-16 inline-block bg-[#01e3eb] text-gray-900 py-3 px-6 rounded-lg text-lg font-semibold hover:bg-[#05b2b8] transition mr-6 max-sm:mr-0 max-sm:w-[350px]">
+            Quero ser aluna agora
+          </a>
+          <a href="https://wa.me/5532999566031?text=Oi,+Greicinha!+Quero+saber+mais+sobre+a+sua+consultoria!" target="_blank"
+          class="mt-16 inline-block border border-white text-white py-3 px-16 rounded-lg text-lg font-semibold hover:bg-[#05b2b8] hover:border-[#05b2b8] hover:text-gray-900 transition max-sm:mt-10 max-sm:w-[350px]">
+            Saiba mais
+          </a>
+        </div>
+      </section>
+      <!-- Imagem com Círculo de Fundo -->
+      <div class="relative w-96 h-96 max-sm:w-96 max-sm:h-96 max-md:w-96 max-md:h-96 flex items-center justify-center md:w-1/2">
+        <!-- Círculo Azul -->
+        <div class="absolute top-5 left-5 w-24 h-24 border border-white rotate-45 opacity-70"></div>
+        <div class="absolute top-18 right-2 w-24 h-24 border border-white rotate-45 opacity-70"></div>
+          <!-- <div class="absolute bottom-10 right-10 w-24 h-24 border border-white rotate-45 opacity-70"></div> -->
+        <div class="absolute max-sm:w-96 max-sm:h-96 max-md:w-96 max-md:h-96 -z-10 md:w-96 md:h-96 bg-cyan-400 rounded-full"></div>
+        <!-- Imagem da Personal Trainer -->
+        <img src="img/6.webp" alt="Greicinha Santos Personal Trainer">
+      </div>
+    </main>
+
+    <section class="bg-gray-900 py-16 text-white text-center mt-24 max-sm:mt-16" id="objetivos">
+      <h2 class="text-4xl font-bold mb-6 flex justify-center items-center gap-2">
+        Qual o seu <span class="text-[#01e3eb]">objetivo?</span>
+      </h2>
+      <div class="flex justify-center">
+        <div class="w-24 h-1 bg-[#01e3eb] rounded-full"></div>
+      </div>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mt-10 px-6">
+        <!-- Card - Saúde -->
+        <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden p-7 hover:scale-105 transition transform">
+          <img src="img/saude-min.webp" alt="Saúde" class="w-full h-52 object-cover">
+          <div class="text-center py-4">
+            <i class="fa-solid fa-suitcase-medical fa-2xl mx-auto mt-10 h-5 text-[#01e3eb]" alt="Ícone Saúde"></i>
+            <h3 class="text-xl font-semibold mt-2">Saúde</h3>
+            <p class="mt-2 text-sm">Cuide do seu corpo e mente, com treinos personalizados de acordo com as suas necessidades e limitações. Sua saúde só depende de você!</p>
+            <a href="https://wa.me/5532999566031?text=Vim+pelo+site.+ Quero+melhorar+a+minha+saúde!" class="mt-14 mb-4  inline-block bg-[#01e3eb] text-gray-900 px-6 py-2 rounded font-semibold hover:bg-[#05b2b8] transition">Quero mais saúde</a>
+          </div>     
+        </div>
+
+          <!-- Card - Emagrecimento -->
+          <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden p-7 hover:scale-105 transition transform">
+              <img src="img/pull-woman-min.webp" alt="Emagrecimento" class="w-full h-52 object-cover">
+              <div class="text-center py-4">
+                <i class="fa-solid fa-weight-scale fa-2xl mx-auto h-5 mt-10 text-[#01e3eb]" alt="Ícone Emagrecimento"></i>
+                <h3 class="text-xl font-semibold mt-2">Emagrecimento</h3>
+                <p class="mt-2 text-sm">Transforme seu corpo! Com treinos personalizados feitos sob medida, você vai descobrir o segredo para um emagrecimento saudável e duradouro.</p> 
+                <a href="https://wa.me/5532999566031?text=Vim+pelo+site.+ Quero+emagrecer!" class="mt-14 mb-4  inline-block bg-[#01e3eb] text-gray-900 px-6 py-2 rounded font-semibold hover:bg-[#05b2b8] transition">Quero emagrecer</a>
+              </div>
+          </div>
+  
+          <!-- Card - Hipertrofia -->
+          <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden p-7 hover:scale-105 transition transform">
+            <img src="img/muscle-woman-min.webp" alt="Hipertrofia" class="w-full h-52 object-cover">
+            <div class="text-center py-4">
+              <i class="fa-solid fa-dumbbell fa-2xl mx-auto h-5 mt-10 text-[#01e3eb]" alt="Ícone Hipertrofia"></i>
+              <h3 class="text-xl font-semibold mt-2">Hipertrofia</h3>
+              <p class="mt-2 text-sm">Desenvolva músculos poderosos e conquiste um corpo definido! Treinos personalizados para um crescimento muscular impressionante.</p>
+              <a href="https://wa.me/5532999566031?text=Vim+pelo+site.+ Quero+ganhar+músculos!" class="mt-14 mb-4 inline-block bg-[#01e3eb] text-gray-900 px-6 py-2 rounded font-semibold hover:bg-[#05b2b8] transition">Quero músculos</a>
+            </div>
+          </div>
+  
+          <!-- Card - Performance -->
+          <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden p-7 hover:scale-105 transition transform">
+            <img src="img/run-woman-min.webp" alt="Performance" class="w-full h-52 object-cover">
+            <div class="text-center py-4">
+              <i class="fa-solid fa-chart-simple fa-2xl h-5 mt-10 text-[#01e3eb]" alt="Ícone Performance"></i>
+              <h3 class="text-xl font-semibold mt-2">Performance</h3>
+              <p class="mt-2 text-sm">Desafie seus limites! Com treinos personalizados, você vai desbloquear seu potencial máximo e alcançar uma performance atlética de tirar o fôlego.</p>
+              <a href="https://wa.me/5532999566031?text=Vim+pelo+site.+ Quero+aumentar+a+minha+performance!" class="mt-14 mb-4  inline-block bg-[#01e3eb] text-gray-900 px-6 py-2 rounded font-semibold hover:bg-[#05b2b8] transition">Quero performance</a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-900 text-white py-16 relative overflow-hidden" id="sobre-mim">
+      <!-- Título -->
+      <div class="text-center mt-24 mb-18">
+        <h2 class="text-4xl font-bold">
+          Eu sou a 
+            <span class="text-[#01e3eb] font-extrabold">Greicinha Santos
+              <!-- <div class="w-24 h-1 mx-auto mt-2"></div> -->
+            </span>, <br> profissional de Educação Física!
+        </h2>
+      </div>
+      
+      <!-- Elementos decorativos -->
+      <div class="absolute top-5 left-5 w-24 h-24 border border-white rotate-45 opacity-70"></div>
+      <div class="absolute bottom-10 right-10 w-10 h-10 border border-white rotate-45"></div>
+    </section>
+
+    <section class="bg-gray-100 pb-0 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 max-sm:py-2 py-16 rounded-xl">
+      <div class="mx-auto flex flex-col md:flex-row pt-10 items-center">
+        <!-- Ilustração com fundo abstrato -->
+        <div class="relative w-full md:w-1/2 flex justify-center mt-10 md:mt-0 max-sm:mt-2 max-md:mt-0 gap-10 px-6 max-sm:bg-gray-900 max-md:bg-gray-900 max-sm:rounded-2xl max-md:rounded-2xl max-sm:mb-20 max-md:mb-20">
+          <img src="img/greice-sem-fundo.webp" alt="Ilustração" class="w-[367px]">
+          <!-- Elementos decorativos -->
+          <!-- <div class="absolute top-5 right-5 w-6 h-6 bg-gray-900 rotate-45"></div> -->
+          <!-- <div class="absolute top-14 right-16 w-4 h-4 bg-gray-700 rotate-55"></div> -->
+          <!-- <div class="absolute top-34 left-16 w-4 h-4 bg-gray-700 rotate-45"></div> -->
+          <!-- <div class="absolute top-14 right-16 w-4 h-4 bg-gray-700 rotate-45"></div> -->
+        </div>
+        <div class="w-full md:w-1/2 text-left">
+          <p class="text-2xl font-bold leading-tight text-gray-900 mb-8">
+            Minha formação me trouxe até aqui:
+          </p>
+          <ul class="mt-4 space-y-3 text-lg text-gray-900">
+            <li>🏋️‍♀️ <strong>Educação Física</strong> – Bacharelado e Licenciatura</li>
+            <li>📚 <strong>Pós em Docência</strong> do Ensino Superior e Educação Física</li>
+            <li>🔬 <strong>Pós em Biomecânica</strong> – porque cada movimento conta!</li>
+            <li>🧠 <strong>Mestranda em Cognição</strong> e Linguagem na UENF</li>
+          </ul>
+          <div class="max-md:flex max-md:justify-center">
+            <a href="https://wa.me/5532999566031?text=Oi, Greicinha! Vim+pelo+site.+ Quero+ser+sua+aluna+agora!" target="_blank" class="mt-16 inline-block bg-[#01e3eb] text-gray-900 py-3 px-6 rounded-lg text-lg font-semibold hover:bg-[#05b2b8] transition mr-6 max-md:mb-14">
+              Quero ser aluna agora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-900 text-white py-16 text-center mt-36 mb-24" id="planos">
+      <!-- Título -->
+      <div class="mb-16">
+        <h2 class="text-4xl font-bold flex justify-center items-center gap-2">
+          Escolha um <span class="text-white font-extrabold">plano</span>
+        </h2>
+        <div class="w-24 h-1 bg-[#01e3eb] mx-auto mt-2"></div>
+        <p class="text-gray-400 mt-14"></p>
+      </div>
+
+      <!-- Planos -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto px-6">
+        <!-- Plano Mensal -->
+        <div class="bg-white text-black rounded-2xl shadow-lg p-6 relative">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-white text-black px-4 py-1 rounded-full shadow-md text-sm">
+            Sem desconto
+          </div>
+          <h3 class="text-2xl font-semibold mt-6">Mensal</h3>
+          <p class="mt-4 font-bold">Pagamento realizado no período de mês a mês.</p>
+          <p class="mt-2 text-gray-600">Ideal para quem busca liberdade, quer testar sem compromisso e começar no seu tempo.</p>
+          <br>
+          <p class="mt-2 text-gray-600">Clique no botão abaixo para saber valores e contratar o plano <strong>mensal.</strong></p>
+          <a href="https://wa.me/5532999566031?text=Oi,+Greicinha!+Vim+pelo+site.+Quero+assinar+o+plano+mensal!" target="_blank" class="mt-6 inline-block bg-black text-white py-2 px-4 rounded-full hover:bg-gray-800 transition">
+            Assinar plano mensal
+          </a>
+        </div>
+
+        <!-- Plano Trimestral -->
+        <div class="bg-[#01e3eb] text-black rounded-2xl shadow-lg p-6 relative">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#01e3eb] text-black px-4 py-1 rounded-full shadow-md text-sm">
+            10% de desconto
+          </div>
+          <h3 class="text-2xl font-semibold mt-6">Trimestral</h3>
+          <p class="mt-4 font-bold">Período de 3 meses com 10% de desconto.</p>
+          <p class="mt-2 text-gray-800">Ideal para quem quer manter o foco e economizar. Tenha mais resultado e menos preocupação.</p>
+          <br>
+          <p class="mt-2 text-gray-800">Clique no botão abaixo para saber valores e contratar o plano <strong>trimestral.</strong></p>
+          <a href="https://wa.me/5532999566031?text=Oi,+Greicinha!+Vim+pelo+site.+Quero+assinar+o+plano+trimestral!" target="_blank" class="mt-6 inline-block bg-black text-white py-2 px-4 rounded-full hover:bg-gray-800 transition">
+            Assinar plano trimestral
+          </a>
+        </div>
+
+        <!-- Plano Semestral -->
+        <div class="bg-[#EB5B00] text-black rounded-2xl shadow-lg p-6 relative">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#EB5B00] text-black px-4 py-1 rounded-full shadow-md text-sm">
+            20% de desconto
+          </div>
+          <h3 class="text-2xl font-semibold mt-6">Semestral</h3>
+          <p class="mt-4 font-bold">Período de 6 meses com 20% de desconto.</p>
+          <p class="mt-2 text-gray-900">Ideal para quem decidiu ir com tudo. Economize mais e foque na transformação.</p>
+          <br>
+          <p class="mt-2 text-gray-900">Clique no botão abaixo para saber valores e contratar o plano <strong>semestral.</strong></p>
+          <a href="https://wa.me/5532999566031?text=Oi,+Greicinha!+Vim+pelo+site.+Quero+assinar+o+plano+semestral!" target="_blank" class="mt-6 inline-block bg-black text-white py-2 px-4 rounded-full hover:bg-gray-800 transition">
+            Assinar plano semestral
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-20 text-center" id="como-funciona">
+      <h2 class="text-4xl font-bold flex items-center gap-2 ml-24 mb-24">
+        <span class="text-[#01e3eb] font-extrabold">Como funciona</span>
+      </h2>
+      <div class="max-w-5xl mx-auto px-6 relative">
+    
+        <!-- Linha vertical central -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-[#01e3eb]"></div>
+        <!-- Etapa 1 -->
+        <div class="mb-16 flex flex-col md:flex-row items-center justify-between relative">
+          <div class="md:w-5/12 text-right md:pr-8 max-sm:text-center">
+            <div class="bg-gray-50 p-4 rounded-xl shadow-lg">
+              <h3 class="font-semibold text-gray-800 mb-2">1. Anamnese</h3>
+              <p class="text-gray-600 text-sm">O processo geralmente começa com uma avaliação detalhada, onde você compartilha seus objetivos, histórico de exercícios, preferências e eventuais limitações.
+              </p>
+            </div>
+          </div>
+          <div class="hidden md:flex flex-col items-center gap-2 absolute left-1/2 transform -translate-x-1/2">
+            <div class="w-4 h-4 bg-[#01e3eb] rounded-full"></div>
+            <div class="bg-[#01e3eb] text-white text-xs px-3 py-1 rounded-lg shadow-md">Início</div>
+          </div>
+        </div>
+    
+        <!-- Etapa 2 -->
+        <div class="mb-16 flex flex-col md:flex-row items-center justify-between relative">
+          <div class="hidden md:flex flex-col items-center gap-2 absolute left-1/2 transform -translate-x-1/2">
+            <div class="w-4 h-4 bg-[#01e3eb] rounded-full"></div>
+          </div>
+          <div class="md:w-5/12 md:ml-auto md:pl-8">
+            <div class="bg-gray-50 p-4 rounded-xl shadow-lg">
+              <h3 class="font-semibold text-gray-800 mb-2">2. Elaboração do Treino</h3>
+              <p class="text-gray-600 text-sm">Com base nas informações coletadas, eu monto um plano de treino sob medida, que pode incluir exercícios, séries e repetições específicas.
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Etapa 3 -->
+        <div class="mb-16 flex flex-col md:flex-row items-center justify-between relative">
+          <div class="md:w-5/12 text-right md:pr-8 max-sm:text-center">
+            <div class="bg-gray-50 p-4 rounded-xl shadow-lg">
+              <h3 class="font-semibold text-gray-800 mb-2">3. Ajustes e Feedback</h3>
+              <p class="text-gray-600 text-sm">Após iniciar os treinos, você pode me fornecer feedback sobre o que está funcionando ou não, permitindo que eu faça ajustes.</p>
+            </div>
+          </div>
+          <div class="hidden md:flex flex-col items-center gap-2 absolute left-1/2 transform -translate-x-1/2">
+            <div class="w-4 h-4 bg-[#01e3eb] rounded-full"></div>
+          </div>
+        </div>
+    
+        <!-- Etapa 4 -->
+        <div class="mb-16 flex flex-col md:flex-row items-center justify-between relative">
+          <div class="hidden md:flex flex-col items-center gap-2 absolute left-1/2 transform -translate-x-1/2">
+            <div class="w-4 h-4 bg-[#01e3eb] rounded-full"></div>
+          </div>
+          <div class="md:w-5/12 md:ml-auto md:pl-8">
+            <div class="bg-gray-50 p-4 rounded-xl shadow-lg">
+              <h3 class="font-semibold text-gray-800 mb-2">4. Suporte</h3>
+              <p class="text-gray-600 text-sm">Estarei disponível de segunda a sexta para tirar dúvidas, oferecer dicas sobre técnica.</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Etapa final -->
+        <div class="flex flex-col md:flex-row items-center justify-between relative">
+          <div class="md:w-5/12 text-right md:pr-8 max-sm:text-center">
+            <div class="bg-gray-50 p-4 rounded-xl shadow-lg">
+              <h3 class="font-semibold text-gray-800 mb-2">5. Resultados Visíveis 💪</h3>
+              <p class="text-gray-600 text-sm">Você ganha mais saúde, autoestima e performance com acompanhamento profissional contínuo.</p>
+            </div>
+          </div>
+          <div class="hidden md:flex flex-col items-center gap-2 absolute left-1/2 transform -translate-x-1/2">
+            <div class="w-4 h-4 bg-[#01e3eb] rounded-full"></div>
+            <div class="bg-[#01e3eb] text-white text-xs px-3 py-1 rounded-lg shadow-md">Resultados</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-24 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+        <div>
+          <div class="flex items-end gap-6">
+            <img src="img/logo-branca-greicinha-santos.webp" alt="Logo Greicinha Santos" class="h-20 w-40">
+          </div>
+          <p class="text-gray-300 mb-6">
+            Vamos viver gente!
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <ul class="space-y-2">
+              <li><a href="#home" class="hover:text-[#01e3eb]">Home</a></li>
+              <li><a href="#objetivos" class="hover:text-[#01e3eb]">Objetivos</a></li>
+              <li><a href="#sobre-mim" class="hover:text-[#01e3eb]">Sobre mim</a></li>
+              <li><a href="#planos" class="hover:text-[#01e3eb]">Planos</a></li>
+              <li><a href="#como-funciona" class="hover:text-[#01e3eb]">Como funciona</a></li>
+            </ul>
+          </div>
+          <div>
+            <a href="#" class="inline-flex items-center gap-2 text-white hover:text-[#01e3eb]">
+              <i class="fa-brands fa-instagram"></i>
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-[#01e3eb] my-8"></div>
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row text-sm text-gray-400 justify-center">
+        <p>© 2025 Greicinha Santos. Todos os direitos reservados. Desenvolvido por <a href="https://wa.me/5522998296439?text=Oi, AmogTech! Vim+pelo+site+da+Greicinha+Santos.+Quero+saber+mais+sobre+os+seus+serviços+de+tecnologia!" target="_blank" class="hover:text-purple-600 underline text-purple-500">Amog Tech</a></p>
+      </div>
+    </footer>
+
+    <!-- Ícone flutuante do WhatsApp -->
+    <a href="https://wa.me/5532999566031?text=Oi,+Greicinha!+Vim+pelo+site.+Quero+fazer+parte+do+seu+time+de+consultoria!" target="_blank"
+      class="fixed bottom-6 right-3 bg-green-500 p-4 rounded-full shadow-lg hover:scale-110 transition h-16 justify-center items-center flex">
+      <i class="fa-brands fa-whatsapp fa-2xl"></i>
+    </a>
+    <!-- Ícone flutuante: Scroll para o topo -->
+    <button onclick="scrollToTop()"
+      class="fixed bottom-24 right-6 mb-4 z-50 bg-white text-[#01e3eb] p-4 rounded shadow-lg hover:scale-110 transition opacity-90 w-10 h-10 justify-center items-center flex">
+      <i class="fa-solid fa-arrow-up w-5 fa-xl"></i>
+    </button>
+
+    <!-- Script para scroll ao topo -->
+    <script>
+      const menuButton = document.getElementById('menu-button');
+      const closeButton = document.getElementById('close-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        document.body.classList.add('overflow-hidden'); 
+      });
+
+      closeButton.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+        document.body.classList.remove('overflow-hidden'); 
+      });
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    </script>
+  </body>
+</html>

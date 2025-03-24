@@ -1,0 +1,15 @@
+# Ignora pastas de dependências do Node.js
+node_modules/
+
+# Arquivo de bloqueio de dependências (não necessário para produção na Hostinger)
+package-lock.json
+
+# Arquivos de desenvolvimento do Tailwind (você já fez o build)
+input.css
+tailwind.config.js
+
+# Configurações locais do VS Code (não precisam ir pro repo)
+.vscode/
+
+# Arquivos do sistema operacional (macOS)
+.DS_Store
