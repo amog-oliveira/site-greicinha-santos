@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Acompanhamento profissional, treinos personalizados, consultoria e foco em saúde, autoestima e performance. Treine com a Greicinha Santos!">
     <meta name="keywords" content="personal trainer itaperuna, treino personalizado, saúde, emagrecimento, performance, hipertrofia, Greicinha Santos, consultoria">
-    <!-- Open Graph para compartilhamento -->
-    <meta property="og:title" content="Greicinha Santos – Personal Trainer">
+    <meta property="og:title" content="Greicinha Santos - Personal Trainer">
     <meta property="og:description" content="Consultoria personalizada com foco em saúde, autoestima e performance. Treine com a Greicinha Santos de onde estiver!">
     <meta property="og:image" content="https://www.greicinhasantos.com.br/img/preview-logo-fundo-cinza.jpg">
     <meta property="og:image:width" content="100" />
@@ -22,13 +21,6 @@
   </head>
   <body class="bg-gray-900 text-white max-sm:overflow-x-hidden">
     <header class="bg-gray-900 flex justify-between items-center p-6 max-w-6xl mx-auto mb-8">
-      <!-- <div>
-        <div class="flex items-end gap-6">
-          <img src="img/logo-branca-greicinha-santos.webp" alt="Logo Greicinha Santos" class="h-25 w-50">
-          <p class="text-gray-300 mb-6">Vão viver, gente!</p>
-        </div>
-      </div> -->
-
       <div>
         <div class="flex items-end gap-6">
           <img src="img/logo-branca-greicinha-santos.webp" alt="Logo Greicinha Santos" class="h-25 w-50">
@@ -43,6 +35,7 @@
         <div class="flex">
           <ul class="md:flex gap-6">
             <li><a href="#" class="hover:text-[#01e3eb]">Início</a></li>
+            <li><a href="#aulao-bike" class="bg-[#EB5B00] hover:text-[#01e3eb]">Aulão de Bike Indoor - 31/05</a></li>
             <li><a href="#objetivos" class="hover:text-[#01e3eb]">Objetivos</a></li>
             <li><a href="#sobre-mim" class="hover:text-[#01e3eb]">Sobre mim</a></li>
             <li><a href="#planos" class="hover:text-[#01e3eb]">Planos</a></li>
@@ -66,6 +59,7 @@
         <nav class="flex flex-col gap-4 p-6 text-lg">
           <ul class="md:flex">
             <li><a href="#" class="hover:text-[#01e3eb]">Início</a></li>
+            <li><a href="#aulao-bike" class="bg-[#EB5B00] hover:text-[#01e3eb]">Aulão de Bike Indoor - 31/05</a></li>
             <li><a href="#objetivos" class="hover:text-[#01e3eb]">Objetivos</a></li>
             <li><a href="#sobre-mim" class="hover:text-[#01e3eb]">Sobre mim</a></li>
             <li><a href="#planos" class="hover:text-[#01e3eb]">Planos</a></li>
@@ -104,13 +98,69 @@
         <!-- Círculo Azul -->
         <div class="absolute top-5 left-5 max-sm:w-15 max-sm:h-15 w-24 h-24 border border-white rotate-45 opacity-70"></div>
         <div class="absolute top-18 max-sm:top-[150px] right-2 max-sm:right-[30px] max-sm:w-15 max-sm:h-15 w-24 h-24 border border-white rotate-45 opacity-70"></div>
-          <!-- <div class="absolute bottom-10 right-10 w-24 h-24 border border-white rotate-45 opacity-70"></div> -->
         <div class="absolute max-sm:w-80 max-sm:h-80 max-md:w-96 max-md:h-96 -z-10 md:w-96 md:h-96 bg-cyan-400 rounded-full"></div>
         <!-- Imagem da Personal Trainer -->
         <img src="img/6.webp" alt="Greicinha Santos Personal Trainer" >
       </div>
     </main>
     
+    <section class="bg-white text-gray-900 py-24 px-16" id="aulao-bike">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <!-- Imagem -->
+        <div class="flex justify-center">
+          <img src="img/bike-indoor.png" alt="Aulão de Bike Indoor com Greicinha" class="w-96 h-108 rounded">
+        </div>
+        <!-- Conteúdo -->
+        <div class="text-left">
+          <h2 class="sm:text-4xl font-bold mb-4 text-4xl">
+            Aulão de Bike Indoor com a <span class=" text-[#01e3eb] font-[Pacifico]"> Greicinha </span>na <strong class="underline bg-[#EB5B00]">Drº Fitness Academia</strong> em Itaperuna-RJ!
+          </h2>
+          <h2 class="text-2xl">Uma aula especial com muita energia e endorfina garantida!!!</h2>
+          <p class="text-md sm:text-lg text-gray-400 mb-6 mt-10">
+            Obs.: Atenção! Este aulão é presencial. Para participar, é necessário estar na cidade de Itaperuna-RJ no dia 31/05/2025.
+            <br>
+            <span class="block mt-3 text-gray-600 font-bold text-sm">Vagas limitadas!</span>
+          </p>
+            <!-- Card - Contador -->
+          <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
+            <div class="text-center p-4">
+              <i class="fa-solid fa-hourglass-half fa-xl mx-auto mt-10 h-5 text-[#01e3eb]" alt="Ícone Ampulheta"></i>
+              <h3 class="text-xl font-semibold mt-2">O aulão começa em:</h3>
+              <p id="contador" class="text-xl font-mono font-bold text-gray-900 mb-16">Carregando...</p>
+              <div class="flex max-sm:flex-col justify-center items-center gap-4 ">
+                <a href="https://mpago.la/1Gjo2XY" target="_blank" rel="noopener noreferrer" class="mt-8 mb-4 inline-block bg-[#01e3eb] text-gray-900 px-6 py-2 rounded font-semibold hover:bg-[#05b2b8] transition">Quero garantir minha vaga agora!</a>
+                <a href="https://wa.me/5532999566031?text=Oi+Greicinha!+Acabei+de+garantir+minha+vaga.+Quero+confirmar+minha+presença+no+aulão+do+dia+31/05!" target="_blank" class="mt-8 mb-4 inline-block border border-[#01e3eb] text-[#01e3eb] px-6 py-2 rounded font-semibold hover:bg-[#05b2b8] hover:text-gray-900 transition">Já garanti. Quero confirmar!</a>
+              </div>   
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Script do contador regressivo -->
+    <script>
+      const dataAulao = new Date("2025-05-31T08:00:00-03:00").getTime();
+      const el = document.getElementById("contador");
+    
+      const atualizarContador = () => {
+        const agora = new Date().getTime();
+        const distancia = dataAulao - agora;
+    
+        if (distancia < 0) {
+          el.innerText = "O aulão já começou!";
+          return;
+        }
+    
+        const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+    
+        el.innerText = `${dias}d ${horas}h ${minutos}min ${segundos}s`;
+      };
+    
+      setInterval(atualizarContador, 1000);
+    </script>
+
     <section class="bg-gray-900 py-16 text-white text-center mt-24 max-sm:mt-16" id="objetivos">
       <h2 class="text-4xl font-bold mb-6 flex justify-center items-center gap-2">
         Qual o seu <span class="text-[#01e3eb]">objetivo?</span>
@@ -172,11 +222,9 @@
         <h2 class="text-4xl font-bold max-sm:px-4">
           Eu sou a 
           <span class="text-[#01e3eb] font-extrabold">Greicinha Santos
-          <!-- <div class="w-24 h-1 mx-auto mt-2"></div> -->
           </span>, <br> profissional de Educação Física!
         </h2>
       </div>
-      
       <!-- Elementos decorativos -->
       <div class="absolute top-5 left-5 w-24 h-24 border border-white rotate-45 opacity-70"></div>
       <div class="absolute bottom-10 right-10 w-10 h-10 border border-white rotate-45"></div>
@@ -187,11 +235,6 @@
         <!-- Ilustração com fundo abstrato -->
         <div class="relative w-full md:w-1/2 flex justify-center mt-10 md:mt-0 max-sm:mt-2 max-md:mt-0 gap-10 px-6 max-sm:bg-gray-900 max-md:bg-gray-900 max-sm:rounded-2xl max-md:rounded-2xl max-sm:mb-20 max-md:mb-20">
           <img src="img/greice-sem-fundo.webp" alt="Ilustração" class="w-[367px]">
-          <!-- Elementos decorativos -->
-          <!-- <div class="absolute top-5 right-5 w-6 h-6 bg-gray-900 rotate-45"></div> -->
-          <!-- <div class="absolute top-14 right-16 w-4 h-4 bg-gray-700 rotate-55"></div> -->
-          <!-- <div class="absolute top-34 left-16 w-4 h-4 bg-gray-700 rotate-45"></div> -->
-          <!-- <div class="absolute top-14 right-16 w-4 h-4 bg-gray-700 rotate-45"></div> -->
         </div>
         <div class="w-full md:w-1/2 text-left">
           <p class="text-2xl font-bold leading-tight text-gray-900 mb-8">
@@ -276,7 +319,6 @@
         <span class="text-[#01e3eb] font-extrabold ">Como funciona</span>
       </h2>
       <div class="max-w-5xl mx-auto px-6 relative">
-    
         <!-- Linha vertical central -->
         <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-[#01e3eb]"></div>
         <!-- Etapa 1 -->
@@ -364,6 +406,7 @@
           <div>
             <ul class="space-y-2">
               <li><a href="#home" class="hover:text-[#01e3eb]">Home</a></li>
+              <li><a href="#aulao-bike" class="bg-[#EB5B00] hover:text-[#01e3eb]">Aulão de Bike - 31/05</a></li>
               <li><a href="#objetivos" class="hover:text-[#01e3eb]">Objetivos</a></li>
               <li><a href="#sobre-mim" class="hover:text-[#01e3eb]">Sobre mim</a></li>
               <li><a href="#planos" class="hover:text-[#01e3eb]">Planos</a></li>
