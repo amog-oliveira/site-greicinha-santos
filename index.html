@@ -55,7 +55,7 @@
         <div class="flex">
           <ul class="md:flex gap-6">
             <li><a href="#" class="hover:text-[#01e3eb]">Início</a></li>
-            <li><a href="#aulao-bike" class="bg-[#EB5B00] hover:text-[#01e3eb]">Aulão de Bike Indoor - 18/10</a></li>
+            <!-- <li><a href="#aulao-bike" class="bg-[#EB5B00] hover:text-[#01e3eb]">Aulão de Bike Indoor - 18/10</a></li> -->
             <li><a href="#objetivos" class="hover:text-[#01e3eb]">Objetivos</a></li>
             <li><a href="#sobre-mim" class="hover:text-[#01e3eb]">Sobre mim</a></li>
             <li><a href="#planos" class="hover:text-[#01e3eb]">Planos</a></li>
@@ -79,7 +79,7 @@
         <nav class="flex flex-col gap-4 p-6 text-lg">
           <ul class="md:flex">
             <li><a href="#" class="hover:text-[#01e3eb]">Início</a></li>
-            <li><a href="#aulao-bike" class="bg-[#EB5B00] hover:text-[#01e3eb]">Aulão de Bike Indoor - 18/10</a></li>
+          <!-- <li><a href="#aulao-bike" class="bg-[#EB5B00] hover:text-[#01e3eb]">Aulão de Bike Indoor - 18/10</a></li>-->
             <li><a href="#objetivos" class="hover:text-[#01e3eb]">Objetivos</a></li>
             <li><a href="#sobre-mim" class="hover:text-[#01e3eb]">Sobre mim</a></li>
             <li><a href="#planos" class="hover:text-[#01e3eb]">Planos</a></li>
@@ -124,13 +124,14 @@
       </div>
     </main>
     
+    <!--
     <section class="bg-white text-gray-900 py-24 px-16" id="aulao-bike">
       <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <!-- Imagem -->
+        
         <div class="flex justify-center">
           <img src="img/bike-indoor.png" alt="Aulão de Bike Indoor com Greicinha" class="w-96 h-full rounded">
         </div>
-        <!-- Conteúdo -->
+        
         <div class="text-left">
           <h2 class="sm:text-4xl font-bold mb-4 text-4xl leading-12">
             Aulão de Bike Indoor no dia <strong>18/10</strong>, com a <span class=" text-[#01e3eb] font-[Pacifico]">Greicinha Santos</span>, na <strong class="bg-[#EB5B00] decoration-4">Dr. Fitness Academia</strong>, em Itaperuna-RJ!
@@ -141,7 +142,7 @@
             <br>
             <span class="block mt-3 text-gray-600 font-bold text-sm">Vagas limitadas!</span>
           </p>
-            <!-- Card - Contador -->
+
           <div id="card-aulao" class="bg-white text-black rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
             <div class="text-center p-4">
               <i class="fa-solid fa-hourglass-half fa-xl mx-auto mt-10 h-5 text-[#01e3eb]" alt="Ícone Ampulheta"></i>
@@ -156,7 +157,7 @@
         </div>
       </div>
     </section>
-    <!-- Script do contador regressivo -->
+    
     <script>
       const dataAulao = new Date("2025-10-18T08:00:00-03:00").getTime();
       const contador = document.getElementById("contador");
@@ -186,7 +187,7 @@
       };  
       setInterval(atualizarContador, 1000);
     </script>
-
+    -->
     <section class="bg-gray-900 py-16 text-white text-center mt-24 max-sm:mt-16" id="objetivos">
       <h2 class="text-4xl font-bold mb-6 flex justify-center items-center gap-2">
         Qual o seu <span class="text-[#01e3eb]">objetivo?</span>
@@ -207,38 +208,38 @@
           </div>     
         </div>
 
-          <!-- Card - Emagrecimento -->
-          <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
-              <img src="img/emagrecimento.webp" alt="Emagrecimento" class="w-full h-52 object-cover">
-              <div class="text-center p-4">
-                <i class="fa-solid fa-weight-scale fa-2xl mx-auto h-5 mt-10 text-[#01e3eb]" alt="Ícone Emagrecimento"></i>
-                <h3 class="text-xl font-semibold mt-2">Emagrecimento</h3>
-                <p class="mt-2 text-sm max-sm:px-4 max-sm:text-base">Transforme seu corpo! Com treinos personalizados feitos sob medida, você vai descobrir o segredo para um emagrecimento saudável e duradouro.</p> 
-                <a href="https://wa.me/5532999566031?text=Vim+pelo+site.+ Quero+emagrecer!" class="mt-14 mb-4  inline-block bg-[#01e3eb] text-gray-900 px-6 py-2 rounded font-semibold hover:bg-[#05b2b8] transition">Quero emagrecer</a>
-              </div>
-          </div>
-  
-          <!-- Card - Hipertrofia -->
-          <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
-            <img src="img/hipertrofia.webp" alt="Hipertrofia" class="w-full h-52 object-cover">
+        <!-- Card - Emagrecimento -->
+        <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
+            <img src="img/emagrecimento.webp" alt="Emagrecimento" class="w-full h-52 object-cover">
             <div class="text-center p-4">
-              <i class="fa-solid fa-dumbbell fa-2xl mx-auto h-5 mt-10 text-[#01e3eb]" alt="Ícone Hipertrofia"></i>
-              <h3 class="text-xl font-semibold mt-2">Hipertrofia</h3>
-              <p class="mt-2 text-sm max-sm:px-4 max-sm:text-base">Desenvolva músculos poderosos e conquiste um corpo definido! Treinos personalizados para um crescimento muscular impressionante.</p>
-              <a href="https://wa.me/5532999566031?text=Vim+pelo+site.+ Quero+ganhar+músculos!" class="mt-14 mb-4 inline-block bg-[#01e3eb] text-gray-900 px-6 py-2 rounded font-semibold hover:bg-[#05b2b8] transition">Quero músculos</a>
+              <i class="fa-solid fa-weight-scale fa-2xl mx-auto h-5 mt-10 text-[#01e3eb]" alt="Ícone Emagrecimento"></i>
+              <h3 class="text-xl font-semibold mt-2">Emagrecimento</h3>
+              <p class="mt-2 text-sm max-sm:px-4 max-sm:text-base">Transforme seu corpo! Com treinos personalizados feitos sob medida, você vai descobrir o segredo para um emagrecimento saudável e duradouro.</p> 
+              <a href="https://wa.me/5532999566031?text=Vim+pelo+site.+ Quero+emagrecer!" class="mt-14 mb-4  inline-block bg-[#01e3eb] text-gray-900 px-6 py-2 rounded font-semibold hover:bg-[#05b2b8] transition">Quero emagrecer</a>
             </div>
-          </div>
+        </div>
   
-          <!-- Card - Performance -->
-          <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
-            <img src="img/performance.webp" alt="Performance" class="w-full h-52 object-cover">
-            <div class="text-center p-4">
-              <i class="fa-solid fa-chart-simple fa-2xl h-5 mt-10 text-[#01e3eb]" alt="Ícone Performance"></i>
-              <h3 class="text-xl font-semibold mt-2">Performance</h3>
-              <p class="mt-2 text-sm max-sm:px-4 max-sm:text-base">Desafie seus limites! Com treinos personalizados, você vai desbloquear seu potencial máximo e alcançar uma performance atlética de tirar o fôlego.</p>
-              <a href="https://wa.me/5532999566031?text=Vim+pelo+site.+ Quero+aumentar+a+minha+performance!" class="mt-14 mb-4  inline-block bg-[#01e3eb] text-gray-900 px-6 py-2 rounded font-semibold hover:bg-[#05b2b8] transition">Quero performance</a>
-            </div>
+        <!-- Card - Hipertrofia -->
+        <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
+          <img src="img/hipertrofia.webp" alt="Hipertrofia" class="w-full h-52 object-cover">
+          <div class="text-center p-4">
+            <i class="fa-solid fa-dumbbell fa-2xl mx-auto h-5 mt-10 text-[#01e3eb]" alt="Ícone Hipertrofia"></i>
+            <h3 class="text-xl font-semibold mt-2">Hipertrofia</h3>
+            <p class="mt-2 text-sm max-sm:px-4 max-sm:text-base">Desenvolva músculos poderosos e conquiste um corpo definido! Treinos personalizados para um crescimento muscular impressionante.</p>
+            <a href="https://wa.me/5532999566031?text=Vim+pelo+site.+ Quero+ganhar+músculos!" class="mt-14 mb-4 inline-block bg-[#01e3eb] text-gray-900 px-6 py-2 rounded font-semibold hover:bg-[#05b2b8] transition">Quero músculos</a>
           </div>
+        </div>
+  
+        <!-- Card - Performance -->
+        <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
+          <img src="img/performance.webp" alt="Performance" class="w-full h-52 object-cover">
+          <div class="text-center p-4">
+            <i class="fa-solid fa-chart-simple fa-2xl h-5 mt-10 text-[#01e3eb]" alt="Ícone Performance"></i>
+            <h3 class="text-xl font-semibold mt-2">Performance</h3>
+            <p class="mt-2 text-sm max-sm:px-4 max-sm:text-base">Desafie seus limites! Com treinos personalizados, você vai desbloquear seu potencial máximo e alcançar uma performance atlética de tirar o fôlego.</p>
+            <a href="https://wa.me/5532999566031?text=Vim+pelo+site.+ Quero+aumentar+a+minha+performance!" class="mt-14 mb-4  inline-block bg-[#01e3eb] text-gray-900 px-6 py-2 rounded font-semibold hover:bg-[#05b2b8] transition">Quero performance</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -432,7 +433,7 @@
           <div>
             <ul class="space-y-2">
               <li><a href="#home" class="hover:text-[#01e3eb]">Home</a></li>
-              <li><a href="#aulao-bike" class="bg-[#EB5B00] hover:text-[#01e3eb]">Aulão de Bike - 18/10</a></li>
+              <!--<li><a href="#aulao-bike" class="bg-[#EB5B00] hover:text-[#01e3eb]">Aulão de Bike - 18/10</a></li>-->
               <li><a href="#objetivos" class="hover:text-[#01e3eb]">Objetivos</a></li>
               <li><a href="#sobre-mim" class="hover:text-[#01e3eb]">Sobre mim</a></li>
               <li><a href="#planos" class="hover:text-[#01e3eb]">Planos</a></li>
