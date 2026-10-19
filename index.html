@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5NMJ9267');</script>
-    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Acompanhamento profissional, treinos personalizados, consultoria e foco em saúde, autoestima e performance. Treine com a Greicinha Santos!">
@@ -25,7 +23,6 @@
     <title>Greicinha Santos - Personal Trainer</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="./output.css?v=2" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9CXXY1FFGC"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -36,10 +33,8 @@
     </script>
   </head>
   <body class="bg-gray-900 text-white max-sm:overflow-x-hidden">
-    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NMJ9267"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <header class="bg-gray-900 flex justify-between items-center p-6 max-w-6xl mx-auto mb-8">
       <div>
         <div class="flex items-end gap-6">
@@ -123,71 +118,6 @@
         <img src="img/6.webp" alt="Greicinha Santos Personal Trainer" >
       </div>
     </main>
-    
-    <!--
-    <section class="bg-white text-gray-900 py-24 px-16" id="aulao-bike">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        
-        <div class="flex justify-center">
-          <img src="img/bike-indoor.png" alt="Aulão de Bike Indoor com Greicinha" class="w-96 h-full rounded">
-        </div>
-        
-        <div class="text-left">
-          <h2 class="sm:text-4xl font-bold mb-4 text-4xl leading-12">
-            Aulão de Bike Indoor no dia <strong>18/10</strong>, com a <span class=" text-[#01e3eb] font-[Pacifico]">Greicinha Santos</span>, na <strong class="bg-[#EB5B00] decoration-4">Dr. Fitness Academia</strong>, em Itaperuna-RJ!
-          </h2>
-          <h2 class="text-2xl">Uma aula especial com muita energia e endorfina garantida!!!</h2>
-          <p class="text-md sm:text-lg text-gray-400 mb-6 mt-10">
-            Obs.: Atenção! Este aulão é presencial. Para participar, é necessário estar na cidade de Itaperuna-RJ no dia 18/10/2025.
-            <br>
-            <span class="block mt-3 text-gray-600 font-bold text-sm">Vagas limitadas!</span>
-          </p>
-
-          <div id="card-aulao" class="bg-white text-black rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
-            <div class="text-center p-4">
-              <i class="fa-solid fa-hourglass-half fa-xl mx-auto mt-10 h-5 text-[#01e3eb]" alt="Ícone Ampulheta"></i>
-              <h3 class="text-xl font-semibold mt-2">O aulão começa em:</h3>
-              <p id="contador" class="text-xl font-mono font-bold text-gray-900 mb-16">Carregando...</p>
-              <div class="flex max-sm:flex-col justify-center items-center gap-4 ">
-                <a href="https://mpago.la/1CPbCEi" id="botao-comprar-aulao" target="_blank" rel="noopener noreferrer" class="mt-8 mb-4 inline-block bg-[#01e3eb] text-gray-900 px-6 py-2 rounded font-semibold hover:bg-[#05b2b8] transition">Quero garantir minha vaga agora!</a>
-                <a href="https://wa.me/5532999566031?text=Oi+Greicinha!+Acabei+de+garantir+minha+vaga.+Quero+confirmar+minha+presença+no+aulão+de+bike+indoor!" target="_blank" class="mt-8 mb-4 inline-block border border-[#01e3eb] text-[#01e3eb] px-6 py-2 rounded font-semibold hover:bg-[#05b2b8] hover:text-gray-900 transition">Já garanti. Quero confirmar!</a>
-              </div>   
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <script>
-      const dataAulao = new Date("2025-10-18T08:00:00-03:00").getTime();
-      const contador = document.getElementById("contador");
-      const botao = document.getElementById("botao-comprar-aulao");
-      const cardAulao = document.getElementById("card-aulao");
-    
-      const atualizarContador = () => {
-        const agora = new Date().getTime();
-        const distancia = dataAulao - agora;
-    
-        if (distancia <= 0) {
-          contador.innerText = "Já começou!";
-          botao.classList.add("opacity-70", "cursor-not-allowed", "pointer-events-none");
-          botao.classList.remove("hover:bg-[#05b2b8]");
-          botao.innerText = "Inscrições encerradas";
-          botao.removeAttribute("href");
-          cardAulao.classList.remove("hover:scale-105");
-          return;
-        }
-    
-        const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
-    
-        contador.innerText = `${dias}d ${horas}h ${minutos}min ${segundos}s`;
-      };  
-      setInterval(atualizarContador, 1000);
-    </script>
-    -->
     <section class="bg-gray-900 py-16 text-white text-center mt-24 max-sm:mt-16" id="objetivos">
       <h2 class="text-4xl font-bold mb-6 flex justify-center items-center gap-2">
         Qual o seu <span class="text-[#01e3eb]">objetivo?</span>
@@ -362,7 +292,6 @@
             <div class="bg-[#01e3eb] text-white text-xs px-3 py-1 rounded-lg shadow-md">Início</div>
           </div>
         </div>
-    
         <!-- Etapa 2 -->
         <div class="mb-16 flex flex-col md:flex-row items-center justify-between relative">
           <div class="hidden md:flex flex-col items-center gap-2 absolute left-1/2 transform -translate-x-1/2">
@@ -376,7 +305,6 @@
             </div>
           </div>
         </div>
-    
         <!-- Etapa 3 -->
         <div class="mb-16 flex flex-col md:flex-row items-center justify-between relative">
           <div class="md:w-5/12 text-right md:pr-8 max-sm:text-center">
